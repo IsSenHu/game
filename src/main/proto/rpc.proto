@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package qdhh;
+
+// 指定java代码的包路径
+option java_package = "com.qdhh.game.proto";
+// 自定义生成java文件的名称
+option java_outer_classname = "RpcProto";
+
+// 通用请求格式
+message Cat {
+    // id
+    string name = 1;
+    // 方法
+    int32 age = 2;
+}
