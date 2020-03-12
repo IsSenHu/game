@@ -1,6 +1,5 @@
 package com.qdhh.game.tianming;
 
-import com.qdhh.game.MyMD5Util;
 import com.qdhh.game.ProtocstuffUtils;
 import com.qdhh.game.XXTEAUtil;
 import okhttp3.*;
@@ -32,7 +31,7 @@ public abstract class AbstractTest<Req, Resp> {
         System.arraycopy(bytes, 0, data, 1, bytes.length);
 
         Request.Builder builder = new Request.Builder()
-                .url("http://localhost:8080/zhmjServer/")
+                .url("http://121.199.5.122:8080/zhmjServer/")
                 .addHeader("URL", url())
                 .addHeader("lan", "zh")
                 .addHeader("Session", sessionId())
